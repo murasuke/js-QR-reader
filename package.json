@@ -1,0 +1,13 @@
+{
+  "name": "js-qr-reader",
+  "version": "1.0.0",
+  "description": "js QR reader sample",
+  "main": "index.html",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jsqr": "^1.4.0"
+  }
+}
