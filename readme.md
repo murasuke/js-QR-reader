@@ -7,6 +7,12 @@ html＋javascriptだけで実装されたシンプルなQRコードリーダー�
 1. スマホのカメラやWebカメラでQRコードを値を取得する。
 1. QRコードを認識したら、赤枠を表示する。
 
+## 処理概要
+1. `<video>`タグでカメラ映像を表示
+1. タイマーでカメラ映像をイメージ化、QR認識ライブラリ[jsQR](https://github.com/cozmo/jsQR)に引き渡す
+1. 認識すると、コードの値とQRコードがある領域の座標を取得します。
+1. 2.に戻り認識を繰り返します。
+
 ## 利用モジュール
 * [jsQR](https://github.com/cozmo/jsQR)
 
@@ -99,6 +105,7 @@ Available on:
 * QRコード認識
   * videoからイメージデータを作成し、QR認識処理に引き渡します。
   * 認識した場合は、コードの表示と赤枠の表示を行います。
+  * タイマーで繰り返します。
 ```javascript
   const timer = setInterval(() => {
       context.drawImage(video, 0, 0, width, height);
