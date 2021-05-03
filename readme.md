@@ -1,7 +1,7 @@
 # js-QR-reader-sample
 
 ## 目的
-html＋javascriptだけで実装されたシンプルなQRコードリーダーのサンプル(が欲しかった)
+html＋javascriptだけで実装されたシンプルなQRコードリーダーサンプル
 
 ## 機能
 1. スマホのカメラやWebカメラでQRコードを値を取得する。
